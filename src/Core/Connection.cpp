@@ -55,7 +55,7 @@ void Connection::handleReadLine(const boost::system::error_code& error, std::siz
 
 void Connection::handleRequest()
 {
-    IncomingMessage request;
+    IncomingMessage request(std::move(m_linesUploaded));
     ServerResponse response(m_socket);
 
     m_requestListener(request, response);

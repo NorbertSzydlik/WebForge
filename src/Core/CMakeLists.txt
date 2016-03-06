@@ -9,7 +9,7 @@ find_package(Boost REQUIRED system)
 
 if(Boost_FOUND)
     include_directories(${Boost_INCLUDE_DIRS})
-    set(SOURCE_FILES main.cpp Server.hpp IncomingMessage.hpp ServerResponse.hpp Server.cpp Connection.cpp Connection.hpp ServerResponse.cpp)
+    set(SOURCE_FILES main.cpp Server.hpp IncomingMessage.hpp ServerResponse.hpp Server.cpp Connection.cpp Connection.hpp ServerResponse.cpp IncomingMessage.cpp)
     add_executable(WebForge ${SOURCE_FILES})
 
     set_property(TARGET WebForge PROPERTY CXX_STANDARD 14)
