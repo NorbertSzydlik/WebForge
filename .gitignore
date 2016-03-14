@@ -26,3 +26,9 @@
 *.exe
 *.out
 *.app
+bin/**/*
+lib/boost_1_60_0/bin.v2/**/*
+lib/boost_1_60_0/stage/**/*
+
+#hidden files
+.*
